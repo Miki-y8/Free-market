@@ -1,7 +1,7 @@
 # Free-market
 ## Dockerビルド
 
-1.git@github.com:Miki-y8/mogitate.git
+1.git@github.com:Miki-y8/Free-market.git
 
 2.DockerDesktopアプリを立ち上げる
 
