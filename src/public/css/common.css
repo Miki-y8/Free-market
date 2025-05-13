@@ -1,0 +1,69 @@
+
+
+.login-header{
+    display: grid;
+    padding: 22px 25px;
+    width: 1515;
+    height: 82;
+    background: #000000;
+}
+
+.logo{
+    width: 370;
+    height: 36;
+    top: 22px;
+    left: 25px;
+}
+
+.login-form__heading {
+    width: 144;
+    height: 46.03508758544922;
+    left: 257px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+.login-form__group{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.login-form__input {
+    display: block;
+    width: 680;
+    height: 56.11798095703125;
+    top: 261.24px;
+    border-radius: 4px;
+    border-width: 1px;
+    border: 1px solid #5F5F5F
+}
+
+.form__button-submit {
+    width: 680;
+    height: 65.25458526611328;
+    top: 597px;
+    left: 417px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #FF5555;
+    cursor: pointer;
+}
+
+.register__link{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
