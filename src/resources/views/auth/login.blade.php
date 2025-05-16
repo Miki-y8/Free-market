@@ -3,14 +3,14 @@
 @section('content')
 <div class="login-form">
     <h2 class="login-form__heading">ログイン</h2>
-        <form class="login-form__form" action="/login" method="post">
+    <form class="login-form__form" action="/login" method="post">
         @csrf
 
         <div class="login-form__group">
             <label class="login-form__label" for="email">メールアドレス</label>
-            <input class="login-form__input" type="mail" name="email" id="email">
+            <input class="login-form__input" type="email" name="email" value="{{ old('email') }}" />
             <p class="register-form__error-message">
-                @error('email')
+            @error('email')
             {{ $message }}
             @enderror
             </p>
@@ -27,8 +27,8 @@
         <div class="form__button">
             <button class="form__button-submit" type="submit">ログインする</button>
         </div>
-        <div class="register__link">
-            <a class="register__button-submit" href="/auth/registration">会員登録はこちら</a>
-        </div>
+    </form>
+    <a href="/registration">会員登録はこちら</a>
+        
 </div>
 @endsection

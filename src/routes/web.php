@@ -14,5 +14,10 @@ use App\Http\Controllers\ItemController;
 |
 */
 
-Route::get('/', [ItemController::class, 'index']);
+Route::post('/login', [ItemController::class, 'loginUser']);
+Route::post('/registration', [ItemController::class, 'storeUser']);
 
+
+Route::middleware('auth')->group(function () {
+    Route::get('/', [ItemController::class, 'puroducts']);
+});
