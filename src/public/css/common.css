@@ -4,7 +4,7 @@
     height: 100%; }
 
 .content{
-    
+
 flex-direction: column;
 }
 
@@ -13,7 +13,6 @@ flex-direction: column;
 .login-header{
     display: grid;
     padding: 22px 25px;
-    width: 1515;
     height: 82;
     background: #000000;
 }
@@ -24,6 +23,7 @@ flex-direction: column;
     top: 22px;
     left: 25px;
 }
+
 
 .register__link{
     font-family: Inter;

@@ -1,5 +1,9 @@
 @extends('layouts.login_register')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/auth/registration.css')}}">
+@endsection
+
 @section('content')
 <div class="registration-form">
     <h2 class="registration-form__heading">会員登録</h2>
@@ -48,7 +52,7 @@
                 <button class="form__button-submit" type="submit">登録する</button>
             </div>
         </form>
-        <div class="registration__link">
+        <div class="login__link">
             <a class="registration__button-submit" href="/auth/login">ログインはこちら</a>
         </div>
 </div>
