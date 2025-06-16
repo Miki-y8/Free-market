@@ -11,7 +11,7 @@
 
 <body>
     <div class="app">
-        <header class="login-header">
+        <header class="puroduct-header">
             
                 <img src="{{ asset('images/logo.svg') }}" alt="ロゴ" class="logo">
             
@@ -19,7 +19,17 @@
                 <ul class="header__list">
                 
                     <li class="header__list-item">
-                        <form action="/logout" class="header__form" method="post">
+                    <form class="search-form">
+                    <div class="search-form__item">
+                    <input class="search-form__item-input" placeholder="なにをお探しですか？" type="text" />
+                    <button class="header__form--target">マイページ</button>
+                    <button class="header__form--target">出品</button>
+
+
+
+                    </div>
+                    </form>
+                        
                             @csrf
                             <button class="header__form--logout" type="submit">ログアウト</button>
                         </form>

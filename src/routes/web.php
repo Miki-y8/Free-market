@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +16,7 @@ use App\Http\Controllers\ItemController;
 |
 */
 
-Route::post('/login', [ItemController::class, 'loginUser']);
-Route::post('/registration', [ItemController::class, 'storeUser']);
 
-
-Route::middleware('auth')->group(function () {
-    Route::get('/', [ItemController::class, 'puroducts']);
-});
+Route::get('/', [ItemController::class, 'index']);
+Route::get('/registration', [ItemController::class, 'user']);
+Route::post('/products', [ProductsController::class, 'index']);

@@ -1,0 +1,68 @@
+.login-form {
+    display: flex;
+    padding: 200px 416px;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.login-form__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+
+
+.login-form__label {
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.login-form__input {
+
+    width: 680px;
+    height: 57.09px;
+    top: 261.24px;
+    border-width: 1px;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+    margin: 4px;
+    
+    
+}
+
+.form__button-submit {
+    width: 680px;
+    height: 65.25px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #FFFFFF;
+    background: #FF5555;
+    border-radius: 5px;
+    margin-top: 59.7px;
+
+
+
+}
+
+.registration__link {
+    text-align: center;
+    height: 53.29px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: Inter;
+    margin: 68px;
+    color: #0073CC;
+
+}
+
+.registration__button-submit{
+    color: #0073CC;
+}
