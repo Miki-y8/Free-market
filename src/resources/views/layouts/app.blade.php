@@ -11,28 +11,22 @@
 
 <body>
     <div class="app">
-        <header class="puroduct-header">
+        <header class="product-header">
             
                 <img src="{{ asset('images/logo.svg') }}" alt="ロゴ" class="logo">
+
+                <form class="search-form">
+                            <div class="search-form__item">
+                                <input class="search-form__item-input" placeholder="なにをお探しですか？" type="text" />
+                            </div>
+                        </form>
             
             <nav class="header__nav">
                 <ul class="header__list">
-                
                     <li class="header__list-item">
-                    <form class="search-form">
-                    <div class="search-form__item">
-                    <input class="search-form__item-input" placeholder="なにをお探しですか？" type="text" />
-                    <button class="header__form--target">マイページ</button>
-                    <button class="header__form--target">出品</button>
-
-
-
-                    </div>
-                    </form>
-                        
-                            @csrf
-                            <button class="header__form--logout" type="submit">ログアウト</button>
-                        </form>
+                        <button class="header__form--target">マイページ</button>
+                        <button class="header__form--target">出品</button>
+                        <button class="header__form--logout" type="submit">ログアウト</button>
                     </li>
                 </ul>
             </nav>
