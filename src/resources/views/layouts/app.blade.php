@@ -13,28 +13,30 @@
     <div class="app">
         <header class="product-header">
             
-                <img src="{{ asset('images/logo.svg') }}" alt="ロゴ" class="logo">
+            <img src="{{ asset('images/logo.svg') }}" alt="ロゴ" class="logo">
 
-                <form class="search-form">
-                            <div class="search-form__item">
-                                <input class="search-form__item-input" placeholder="なにをお探しですか？" type="text" />
-                            </div>
-                        </form>
+                <form class="form" action="/logout" method="post">
+                    @csrf
+                    <div class="search-form__item">
+                        <input class="search-form__item-input" placeholder="なにをお探しですか？" type="text" />
+                    </div>
             
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <button class="header__form--target">マイページ</button>
-                        <button class="header__form--target">出品</button>
-                        <button class="header__form--logout" type="submit">ログアウト</button>
-                    </li>
-                </ul>
-            </nav>
+                    <nav class="header__nav">
+                    @if (Auth::check())
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <button class="header__form--target">マイページ</button>
+                                <button class="header__form--target">出品</button>
+                                <button class="header__form--logout" type="submit">ログアウト</button>
+                            </li>
+                            @endif
+                        </ul>
+                    </nav>
+                </form>
         </header>
     </div>
-        <div class="content">
             @yield('content')
-        </div>
+
     </div>
 </body>
 </html>

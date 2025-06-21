@@ -53,7 +53,7 @@
             </div>
         </form>
         <div class="login__link">
-            <a class="registration__button-submit" href="/auth/login">ログインはこちら</a>
+            <a class="registration__button-submit" href="auth/login">ログインはこちら</a>
         </div>
 </div>
 @endsection

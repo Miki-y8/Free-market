@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UsersController;
+use App\Http\Middleware\UserMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,8 @@ use App\Http\Controllers\UsersController;
 |
 */
 
-
-Route::get('/', [ItemController::class, 'getProducts']);
+Route::middleware('auth')->group(function () {
+ Route::get('/', [ItemController::class, 'getProducts']);
+});
+Route::get('/registration', [UsersController::class, 'storeUser']);
+Route::post('/login', [UsersController::class, 'loginUser']);
