@@ -17,6 +17,4 @@ use App\Http\Controllers\UsersController;
 */
 
 
-Route::get('/', [ItemController::class, 'index']);
-Route::get('/registration', [ItemController::class, 'user']);
-Route::post('/products', [ProductsController::class, 'index']);
+Route::get('/', [ItemController::class, 'getProducts']);

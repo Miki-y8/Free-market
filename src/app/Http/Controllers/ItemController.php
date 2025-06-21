@@ -5,23 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Models\Product;
 
 class ItemController extends Controller
 {
-    public function index()
+    public function getProducts()
     {
-        return view('auth/login');
+        $products = Product::all();
+
+        return view('products', compact('products'));
     }
-
-    public function user()
-    {
-        return view('auth/registration');
-    }
-
-    public function store()
-
-    {
-        return view('purpdicts');
-    }
-
 }
