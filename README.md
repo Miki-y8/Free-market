@@ -1,11 +1,21 @@
 # Free-market
 ## Dockerビルド
 
-1.git@github.com:Miki-y8/Free-market.git
+1.git clone
+
+git@github.com:Miki-y8/Free-market.git
 
 2.DockerDesktopアプリを立ち上げる
 
 3.docker-compose up -d --build
+
+MacのM1・M2チップのPCでエラーが出る場合、docker-compose.ymlファイルのmysqlに
+
+platform: linux/x86_64
+
+を追加する
+
+
 
 ## Laravel環境構築
 
@@ -50,6 +60,7 @@ Laravel8.83.27
 MySQL8.0.26
 
 ## ER図
+<img width="929" alt="スクリーンショット 2025-06-21 19 42 18" src="https://github.com/user-attachments/assets/4f6117c7-af77-4787-87cd-b9fecc26815e" />
 
 
 ## URL
